@@ -17,6 +17,15 @@
 - Provide easy-to-use UI and responsive design for seamless access.
 
 ---
+## 🛠️ Technologies Used
+
+- **React.js** (Frontend)
+- **Express.js** (Backend)
+- **MongoDB** (Database)
+- **Firebase Authentication** (User Login System)
+- **Tailwind CSS** + **DaisyUI** (UI Styling)
+
+---
 
 ## 🚀 Key Features
 
