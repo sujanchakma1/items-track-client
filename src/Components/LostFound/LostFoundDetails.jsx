@@ -128,7 +128,7 @@ const LostFoundDetails = () => {
         <div className="card-actions">
           <button
             onClick={handleOpenModal}
-            className="btn btn-outline btn-primary w-full"
+            className="btn btn-outline btn-primary w-full rounded-lg"
           >
             <TbDetails />
             {post_type == "Lost" ? "Found This!" : "This is Mine!"}
@@ -185,7 +185,7 @@ const LostFoundDetails = () => {
               placeholder="Photo URL"
               readOnly
             />
-            <button className="btn btn-neutral mt-4 w-full">Submit</button>
+            <button className="btn btn-neutral mt-4 w-full rounded-lg">Submit</button>
           </form>
         </div>
       </dialog>

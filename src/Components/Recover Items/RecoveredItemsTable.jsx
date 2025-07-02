@@ -6,7 +6,7 @@ import RecoveredItemColumn from "./RecoveredItemColumn";
 
 const RecoveredItemsTable = ({ myRecoveredPromise }) => {
   const myRecovered = use(myRecoveredPromise);
-  const [layout, setLayout] = useState("column");
+  const [layout, setLayout] = useState("table");
 
   const toggleLayout = (type) => {
     setLayout(type);

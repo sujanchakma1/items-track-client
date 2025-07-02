@@ -112,7 +112,7 @@ const Register = () => {
                 title="Must be more than 6 characters, lowercase letter, uppercase letter"
               />
               {error && <p className="text-red-500">{error}</p>}
-              <button className="btn btn-primary mt-4">Register</button>
+              <button className="btn btn-primary rounded-lg mt-4">Register</button>
               <div className="divider">OR</div>
               {/* Google */}
               <button

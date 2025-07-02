@@ -1,15 +1,15 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { TbDetails } from "react-icons/tb";
+import { IoIosMore } from "react-icons/io";
 import { Link } from "react-router";
 
 const AllItemsCard = ({ allItems }) => {
   // console.log(allItems);
-  const {thumbnail,description,_id,title,post_type,location} = allItems
+  const { thumbnail, description, _id, title, post_type, location } = allItems;
   return (
-    <motion.div
-    whileHover={{ scale: 0.9 }}
-    className="card bg-base-200 shadow-md">
+    <div
+      whileHover={{ scale: 0.9 }}
+      className="card bg-base-200 shadow-md hover:shadow-xl"
+    >
       <figure>
         <img
           src={thumbnail}
@@ -24,14 +24,13 @@ const AllItemsCard = ({ allItems }) => {
         <p>{description}</p>
         <div className="card-actions">
           <Link to={`/allItems/details/${_id}`} className="w-full">
-            <button className="btn btn-primary w-full">
-              <TbDetails/>
-              Details
+            <button className="btn btn-primary w-full rounded-lg">
+              <IoIosMore size={18} /> See More
             </button>
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

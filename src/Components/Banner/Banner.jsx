@@ -1,96 +1,30 @@
 import React from "react";
-import banner1 from "../../assets/Banner/banner1.jpg";
-import banner2 from "../../assets/Banner/banner2.webp"
-import banner3 from "../../assets/Banner/banner3.webp";
-import { motion } from "framer-motion";
+import banner from "../../assets/Banner/banner.jpg";
+import { Link } from "react-router";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full">
-      <div id="slide1" className="carousel-item relative w-full">
-        <img
-          src={banner1}
-          className="w-full h-[450px] object-cover rounded-md "
-        />
-        <div className="absolute mt-20 lg:w-[70%] p-16 space-y-2">
-          <motion.h2
-            className="text-5xl md:text-7xl font-bold"
-            animate={{
-              color: ["#ff5733", "#ffaf33", "#f633ff  ", "#33afff "],
-              transition: { duration: 2, repeat: Infinity },
-            }}
-          >
-             Lost Items Search
-          </motion.h2>
-          <p>
-            A person looking for a lost item (like phone, bag, or pet).
+    <div className="-mt-10">
+      <div className="relative flex justify-center">
+        <img src={banner} alt="" className="w-full h-[400px] object-cover" />
+        <div className="absolute space-y-2 text-center mt-20  lg:mt-24 bg-black/50 p-5 rounded-md lg:max-w-lg max-w-md text-white">
+          <h2 className="text-5xl font-bold items-center">
+            Welcome to{" "}
+            <span className="font text-5xl font-bold items-center">
+              <span className="text-[#c133ff] font font-semibold"> Items</span>
+              Track
+            </span>
+          </h2>
+          <p className="">
+            It is a lost and found item tracking website where users can post
+            lost or found items with details and images. It helps people
+            reconnect with their lost belongings easily.
           </p>
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide2" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide2" className="carousel-item relative w-full">
-        <img
-          src={banner2}
-          className="w-full h-[450px] object-cover rounded-md "
-        />
-        <div className="absolute mt-20 lg:w-[70%] p-16 space-y-2">
-          <motion.h2
-            className="text-5xl md:text-7xl  font-bold"
-            animate={{
-              color: ["#ff5733", "#ffaf33", "#f633ff  ", "#33afff "],
-              transition: { duration: 2, repeat: Infinity },
-            }}
-          >
-            Found Items Announcement
-          </motion.h2>
-
-          <p >
-             Someone holding a found item and looking around or posting about it.
-          </p>
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide3" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide3" className="carousel-item relative w-full">
-        <img
-          src={banner3}
-          className="w-full h-[450px] object-cover rounded-md "
-        />
-        <div className="absolute mt-20 lg:w-[70%] p-16 space-y-2">
-          <motion.h2
-            className="text-5xl md:text-7xl font-bold"
-            animate={{
-              color: ["#ff5733", "#ffaf33", "#f633ff  ", "#33afff "],
-              transition: { duration: 2, repeat: Infinity },
-            }}
-          >
-            Digital Tracking & Community Help
-          </motion.h2>
-
-          <p>
-            A tech-based lost & found platform interface / mobile app / people collaborating.
-          </p>
-        </div>
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide1" className="btn btn-circle">
-            ❯
-          </a>
+          <Link to="/allItems">
+            <button className="btn btn-primary rounded-lg">
+              See Lost & Found Items
+            </button>
+          </Link>
         </div>
       </div>
     </div>

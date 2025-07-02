@@ -11,7 +11,7 @@ const ItemsNotShare = () => {
       <h2 className="text-2xl font-bold">Please Added a Items</h2>
       <Link to="/addItems">
         {" "}
-        <button className="btn btn-primary"><FaLeftLong size={18} />Added Items</button>
+        <button className="btn btn-primary rounded-lg"><FaLeftLong size={18} />Added Items</button>
       </Link>
     </div>
   );

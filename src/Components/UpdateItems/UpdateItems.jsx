@@ -162,7 +162,7 @@ const UpdateItems = () => {
           />
         </fieldset>
 
-        <button className="btn btn-active btn-primary my-2">
+        <button className="btn btn-active btn-primary my-2 rounded-lg">
           Updated Items
         </button>
       </form>

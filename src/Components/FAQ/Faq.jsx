@@ -30,8 +30,8 @@ const Faq = () => {
   ];
 
   return (
-    <div>
-      <h2 class="font-bold text-center text-5xl my-10 text-[#00BCFF]">
+    <div id="faq" className="py-20 -mt-10">
+      <h2 class="font-bold text-center text-5xl mb-10">
         Frequently Asked Questions
       </h2>
       {faqData.map((faq, index) => (

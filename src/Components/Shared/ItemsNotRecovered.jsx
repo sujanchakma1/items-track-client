@@ -11,7 +11,7 @@ const ItemsNotRecovered = () => {
       <h2 className="text-2xl font-bold">Please Recovered a Items</h2>
       <Link to="/allItems">
         {" "}
-        <button className="btn btn-primary"><FaLeftLong size={18} />Recovered Items</button>
+        <button className="btn btn-primary rounded-lg"><FaLeftLong size={18} />Recovered Items</button>
       </Link>
     </div>
   );

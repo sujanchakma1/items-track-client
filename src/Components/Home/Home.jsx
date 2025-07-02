@@ -6,9 +6,14 @@ import Loading from "../Loading/Loading";
 import { Helmet } from "react-helmet-async";
 import Faq from "../FAQ/Faq";
 import Statistic from "../Statistic/Statistic";
+import WhyChooseUs from "../Why Choos us/WhyChooseUs";
 
-const lostFoundPromise = fetch('https://where-is-it-server-ten.vercel.app/Items').then(res=>res.json())
-const allLostFoundPromise = fetch('https://where-is-it-server-ten.vercel.app/allItems').then(res=>res.json())
+const lostFoundPromise = fetch(
+  "https://where-is-it-server-ten.vercel.app/Items"
+).then((res) => res.json());
+const allLostFoundPromise = fetch(
+  "https://where-is-it-server-ten.vercel.app/allItems"
+).then((res) => res.json());
 const Home = () => {
   return (
     <div>
@@ -25,6 +30,9 @@ const Home = () => {
       </section>
       <section className="faq">
         <Faq></Faq>
+      </section>
+      <section>
+        <WhyChooseUs></WhyChooseUs>
       </section>
       <section className="statistic">
         <Suspense fallback={<Loading></Loading>}>

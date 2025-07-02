@@ -96,12 +96,12 @@ const Login = () => {
                 <a className="link link-hover">Forgot password?</a>
               </div>
               {error && <p className="text-red-500">{error}</p>}
-              <button className="btn btn-neutral mt-4">Login</button>
+              <button className="btn btn-primary rounded-lg mt-4">Login</button>
               <div className="divider">OR</div>
               {/* Google */}
               <button
                 onClick={handleGoogleLogin}
-                className="btn bg-white text-black border-[#e5e5e5]"
+                className="btn bg-white btn-outline text-black border-[#e5e5e5]"
               >
                 <svg
                   aria-label="Google logo"
