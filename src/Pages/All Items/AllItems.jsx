@@ -40,7 +40,7 @@ const AllItems = () => {
         <title>All Items | ItemTrack</title>
       </Helmet>
 
-      <h2 className="text-5xl font-bold text-center">Lost & Found Items</h2>
+      <h2 className="text-5xl font-bold text-center text-black">Lost & Found Items</h2>
 
       {/* Search and Filter Section */}
       <div className="flex flex-col md:flex-row items-center gap-10 justify-between">

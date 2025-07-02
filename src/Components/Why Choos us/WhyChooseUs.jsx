@@ -3,7 +3,7 @@ import { FaShieldAlt, FaSearchLocation, FaUndo } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-12 text-gray-800">
+    <section className="py-10 text-gray-800">
       <div className=" px-4">
         <h2 className="text-4xl font-bold text-center mb-6">Why Choose Us</h2>
         <p className="text-center text-lg mb-12">

@@ -5,12 +5,20 @@
 
 @import "tailwindcss";
 @plugin "daisyui";
+
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
   --color-primary: #731c87;
   --color-secondary: #104220;
 }
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary: #731c87;
+  --color-secondary: #104220;
+}
+
 
 .active {
   @apply bg-primary py-1 px-2 rounded-sm text-white

@@ -10,7 +10,7 @@ const RecoveredItems = () => {
   const { user } = UseAuth();
   const {myRecoveredPromise} = MyRecoveredPromise()
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 text-black">
       <Helmet>
         <title>Recovered Items | ItemTrack</title>
       </Helmet>
