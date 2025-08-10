@@ -12,12 +12,6 @@
   --color-primary: #731c87;
   --color-secondary: #104220;
 }
-@plugin "daisyui/theme" {
-  name: "dark";
-  default: true;
-  --color-primary: #731c87;
-  --color-secondary: #104220;
-}
 
 
 .active {

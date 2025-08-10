@@ -15,12 +15,12 @@ const Navbar = () => {
       <li className="link link-hover">
         <NavLink to="/allItems">Lost & Found Items</NavLink>
       </li>
+      <li className="link link-hover">
+        <NavLink to="/addItems">Add Item</NavLink>
+      </li>
 
       {user && (
         <>
-          <li className="link link-hover">
-            <NavLink to="/addItems">Add Item</NavLink>
-          </li>
           <li className="link link-hover">
             <NavLink to="/recoveredItems">Recovered Item</NavLink>
           </li>
@@ -98,7 +98,9 @@ const Navbar = () => {
               <>
                 <Link to="/auth/login">
                   {" "}
-                  <button className="btn btn-primary btn-sm rounded-lg">Login</button>
+                  <button className="btn btn-primary btn-sm rounded-lg">
+                    Login
+                  </button>
                 </Link>
                 <Link to="/auth/register">
                   <button className="btn btn-primary btn-sm rounded-lg">
