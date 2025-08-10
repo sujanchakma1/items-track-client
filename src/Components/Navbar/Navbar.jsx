@@ -82,7 +82,7 @@ const Navbar = () => {
           <div className=" flex gap-5 items-center">
             {/* DaisyUI Theme Toggle */}
             <div className="">
-              <label className="swap swap-rotate cursor-pointer border border-secondary bg-base-200 p-2 rounded-full">
+              <label className="swap swap-rotate cursor-pointer">
                 <input
                   type="checkbox"
                   onChange={toggleTheme}
