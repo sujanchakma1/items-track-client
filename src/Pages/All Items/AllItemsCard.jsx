@@ -24,7 +24,7 @@ const AllItemsCard = ({ allItems }) => {
         <p>{description}</p>
         <div className="card-actions">
           <Link to={`/allItems/details/${_id}`} className="w-full">
-            <button className="btn btn-primary w-full rounded-lg">
+            <button className="btn btn-primary w-full rounded-full">
               <IoIosMore size={18} /> See More
             </button>
           </Link>

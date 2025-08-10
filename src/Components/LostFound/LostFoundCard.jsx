@@ -5,12 +5,12 @@ import { Link } from "react-router";
 const LostFoundCard = ({ LostFound }) => {
   const { thumbnail, title, description, _id, location } = LostFound;
   return (
-    <div className="card bg-base-200 shadow-md hover:shadow-xl">
+    <div className="card bg-base-300 shadow-md hover:shadow-xl">
       <figure>
         <img
           src={thumbnail}
           alt="Thumbnail"
-          className="w-full h-[300px] object-cover p-5 rounded-xl"
+          className="w-full h-[300px] object-cover p-5 rounded"
         />
       </figure>
       <div className="card-body">
@@ -19,7 +19,7 @@ const LostFoundCard = ({ LostFound }) => {
         <p>{description}</p>
         <div className="card-actions">
           <Link to={`/allItems/details/${_id}`} className="w-full">
-            <button className="btn btn-primary w-full rounded-lg items-center">
+            <button className="btn btn-primary w-full rounded-full items-center">
              <IoIosMore size={18}/> See More
             </button>
           </Link>

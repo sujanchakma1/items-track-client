@@ -6,16 +6,21 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-@plugin "daisyui/theme" {
-  name: "light";
-  default: true;
-  --color-primary: #731c87;
-  --color-secondary: #104220;
+
+@layer components {
+  html[data-theme="light"] {
+    --color-primary: #731c87;
+    --color-secondary: #7C9E34;
+  }
+  html[data-theme="dark"] {
+    --color-primary: #731c87;
+    --color-secondary: #7C9E34;
+  }
 }
 
 
 .active {
-  @apply bg-primary py-1 px-2 rounded-sm text-white
+  @apply bg-primary py-1 px-2 rounded-full text-white
 }
 .font{
     font-family: "Alumni Sans SC", sans-serif;

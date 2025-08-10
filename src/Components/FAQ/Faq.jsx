@@ -31,7 +31,7 @@ const Faq = () => {
 
   return (
     <div id="faq" className="py-20 -mt-10">
-      <h2 class="font-bold text-center text-5xl text-black mb-10">
+      <h2 class="font-bold text-center text-5xl mb-10">
         Frequently Asked Questions
       </h2>
       {faqData.map((faq, index) => (

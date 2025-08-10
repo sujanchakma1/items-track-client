@@ -35,7 +35,7 @@ const MyItemsTable = ({ myItemsPromise }) => {
     });
   };
   return (
-    <div className="text-black">
+    <div className="">
       {myItems.length == 0 ? <ItemsNotShare></ItemsNotShare> : (
         <div className="overflow-x-auto">
           <table className="table">

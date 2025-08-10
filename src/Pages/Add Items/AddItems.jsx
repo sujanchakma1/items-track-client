@@ -138,7 +138,7 @@ const AddItems = () => {
         />
       </fieldset>
 
-      <button className="btn btn-active btn-primary my-2 rounded-lg">Add Items</button>
+      <button className="btn btn-active btn-primary my-2 rounded-full">Add Items</button>
     </form>
   );
 };

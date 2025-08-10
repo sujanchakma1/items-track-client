@@ -96,7 +96,7 @@ const Login = () => {
                 <a className="link link-hover">Forgot password?</a>
               </div>
               {error && <p className="text-red-500">{error}</p>}
-              <button className="btn btn-primary rounded-lg mt-4">Login</button>
+              <button className="btn btn-primary rounded-full mt-4">Login</button>
               <div className="divider">OR</div>
               {/* Google */}
               <button

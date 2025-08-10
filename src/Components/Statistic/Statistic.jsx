@@ -27,7 +27,7 @@ const Statistic = ({ allLostFoundPromise }) => {
   return (
     <div className="my-10">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-5xl font-bold mb-10 text-gray-800">
+        <h2 className="text-5xl font-bold mb-10">
            Platform Statistics
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

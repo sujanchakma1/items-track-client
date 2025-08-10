@@ -21,7 +21,7 @@ const Banner = () => {
             reconnect with their lost belongings easily.
           </p>
           <Link to="/allItems">
-            <button className="btn btn-primary rounded-lg">
+            <button className="btn btn-primary rounded-full">
               See Lost & Found Items
             </button>
           </Link>
